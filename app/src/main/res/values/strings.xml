@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">نفیس | nafis</string>
+    <string name="company_name">نفیس</string>
+    <string name="bottom_navigation_home">خانه</string>
+    <string name="bottom_navigation_userManagement">مدیریت</string>
+    <string name="bottom_navigation_form">فرم مشاوره</string>
+    <string name="menu_loginSignUp">ورود</string>
+    <string name="menu_loginLogOut">خروج</string>
+    <string name="menu_about">درباره ما</string>
+    <string name="menuToolbar_shop">فروشگاه</string>
+    <string name="menuToolbar_search">جست و جو</string>
+    <string name="menuToolbar_login">ورود به حساب کاربری</string>
+    <string name="Button_form_next">بعدی</string>
+    <string name="Button_form_Previous">قبل</string>
+    <string name="main_menuList">برند ها</string>
+    <string name="product_list">مرتب سازی</string>
+    <string name="form_button_start">شروع مشاوره</string>
+    <string name="main_status">تخفیف ویژه محصولات شرکت باراکا</string>
+    <string name="form_text_descriptionTitle">تـوضـیـح</string>
+    <string name="form_text_description">برای مشاوره رایگان فرم مشاوره را تکمیل کنید.</string>
+    <string name="UserLogin">ورود</string>
+    <string name="UserRegister">ثبت نام</string>
+    <string name="UserLoginText">ورود به حساب کابری</string>
+    <string name="UserRegisterText">ثبت نام در اپلیکیشن نفیس</string>
+    <string name="usernameEditText">نام کاربری</string>
+    <string name="passwordEditText">کلمه عبور</string>
+    <string name="login_text_forgetPassword">کلمه عبور خود را فراموش کرده اید؟</string>
+    <string name="registerUser_firstName">نام</string>
+    <string name="registerUser_lastName">نام خانوادگی</string>
+    <string name="registerUser_email">ایمیل</string>
+    <string name="registerUser_username">نام کاربری</string>
+    <string name="registerUser_password">کلمه عبور</string>
+    <string name="validation_username">این قسمت نمی تواند خالی باشد</string>
+    <string name="validation_password">کلمه عبور حداقل باید 3 کاراکتر باشد</string>
+    <string name="usernameNotExist">نام کابری وجود ندارد</string>
+    <string name="passwordNotExist">کلمه عبور صحیح نیست</string>
+    <string name="errorInGetData">خطا در دریافت اطلاعات</string>
+    <string name="successLogin">"با موفقیت وارد شدید :)</string>
+    <string name="successLoOut">"با موفقیت خارج شدید :)</string>
+    <string name="userQuest">کاربر مهمان</string>
+    <string name="btn_logOut">خروج از حساب کاربری</string>
+    <string name="noInternet">اینترنت در دسترس نیست</string>
+    <string name="productNotInStock">تمام شد !</string>
+    <string name="productDesEmpty">توضیحی برای این محصول وجود ندارد.</string>
+    <string name="productNotExist">محصولی یافت نشد</string>
+    <string name="addToBagTitle">سفارش این محصول</string>
+    <string name="TitleDes">توضیحات</string>
+    <string name="otherProductTitle">محصولات دیگر این برند</string>
+    <string name="priceTitle">قیمت با تخفیف</string>
+    <string name="regularPriceTitle">قیمت</string>
+
+
+</resources>

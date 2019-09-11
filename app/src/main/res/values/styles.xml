@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+    </style>
+    
+    <style name="cardViewQuestion" parent="CardView">
+        <item name="android:elevation" tools:targetApi="lollipop">@dimen/cardElevation</item>
+    </style>
+
+    <style name="checkboxQuestion">
+        <item name="android:gravity">right|center</item>
+        <item name="android:layoutDirection" tools:targetApi="jelly_bean_mr1">rtl</item>
+        <item name="android:layout_marginTop">@dimen/standard_margin</item>
+        <item name="android:layout_marginRight">@dimen/standard_margin</item>
+        <item name="android:textSize">@dimen/large_textSize_sp</item>
+        <item name="android:buttonTint" tools:targetApi="lollipop">@color/colorPrimary</item>
+        <item name="android:textColor">@color/dark_gray_text</item>
+    </style>
+
+    <style name="ButtonNext">
+        <item name="android:background">@drawable/shape_button_next</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/Button_form_next</item>
+        <item name="android:textSize">@dimen/Xlarge_textSize_dp</item>
+    </style>
+
+    <style name="ButtonPrevious">
+        <item name="android:background">@drawable/shape_button_back</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:text">@string/Button_form_Previous</item>
+        <item name="android:textSize">@dimen/normal_textSize_dp</item>
+    </style>
+
+    <style name="ButtonNextSizeChanged" parent="ButtonNext">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="ButtonPreviousSizeChanged" parent="ButtonPrevious">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="TabTextSize" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/normal_textSize_dp</item>
+    </style>
+
+    <style name="CardViewProduct" parent="CardView">
+        <item name="android:elevation" tools:targetApi="lollipop">@dimen/cardElevation</item>
+    </style>
+
+
+
+
+
+
+</resources>
