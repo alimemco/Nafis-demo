@@ -118,7 +118,11 @@ public class ProductCategoryAdapter extends RecyclerView.Adapter<ProductCategory
 
         if (!product.getImg_src().equals("") &&
                 !product.getImg_src().isEmpty()) {
-            Picasso.get().load(product.getImg_src()).into(holder.productImage);
+            Picasso.get()
+                    .load(product.getImg_src())
+                    .resize(700, 700)
+                    .placeholder(R.drawable.banner_category_holder)
+                    .into(holder.productImage);
         }
 
         if (!product.getPrice().equals(product.getRegular_price())) {

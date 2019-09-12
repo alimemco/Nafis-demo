@@ -5,9 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +15,7 @@ import com.ali.rnp.nafis.R;
 import com.ali.rnp.nafis.view.DataModel.ApiService;
 import com.ali.rnp.nafis.view.DataModel.Category;
 import com.ali.rnp.nafis.view.DataModel.DataGenrator;
-import com.ali.rnp.nafis.view.DataModel.Question;
 import com.ali.rnp.nafis.view.adapter.CategoryAdapter;
-import com.ali.rnp.nafis.view.adapter.QuestionAdapter;
 import com.ali.rnp.nafis.view.utils.Utils;
 
 import java.util.List;
@@ -41,7 +37,8 @@ public class FragmentHome extends Fragment {
         categoryAdapter = new CategoryAdapter(getContext());
 
 
-        if (Utils.checkConnection(getContext())==true){
+        if (getContext() != null)
+            if (Utils.checkConnection(getContext())) {
             getDataFromServer();
         }else {
             getDataFromLocal();
