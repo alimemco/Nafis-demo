@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundApp"
+    android:layoutDirection="ltr"
     tools:context=".view.activity.Question_Activity">
 
 
@@ -26,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/standard_margin_2x"
-                app:srcCompat="@drawable/ic_left_arrow"/>
+                app:srcCompat="@drawable/ic_left_arrow" />
 
 
             <params.com.stepview.StatusViewScroller
@@ -42,21 +43,22 @@
                 app:circleStrokeColorIncomplete="#80DEEA"
                 app:circleStrokeWidth="4dp"
 
+                app:completeDrawable="@drawable/ic_check"
                 app:currentCount="1"
-                app:lineColorCurrent="@color/colorPrimaryDark"
-                app:lineColorIncomplete="#B4B7BA"
-                app:lineGap="5dp"
-                app:lineWidth="3dp"
-                app:stepCount="17"
-
                 app:drawLabels="true"
                 app:lineColor="#4CAF50"
+                app:lineColorCurrent="@color/colorPrimaryDark"
+                app:lineColorIncomplete="#B4B7BA"
 
+                app:lineGap="5dp"
+                app:lineWidth="3dp"
+
+                app:stepCount="17"
                 app:textColorLabels="@android:color/white"
                 app:textColorLabelsCurrent="@android:color/white"
                 app:textColorLabelsIncomplete="#006064"
-                app:textSizeLabels="15sp"
 
+                app:textSizeLabels="15sp"
 
                 >
 
@@ -82,14 +84,15 @@
         tools:listitem="@layout/question_item" />
 
 
-
-
     <Button
         android:id="@+id/activity_question_next"
         style="@style/ButtonNextSizeChanged"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect_clicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/activity_question_previous" />
@@ -102,9 +105,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/activity_question_next"
-
         app:layout_constraintStart_toStartOf="parent" />
 
 

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundApp"
+    android:layoutDirection="ltr"
     tools:context=".view.activity.Question_Activity">
 
 
@@ -26,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/standard_margin_2x"
-                app:srcCompat="@drawable/ic_left_arrow"/>
+                app:srcCompat="@drawable/ic_left_arrow" />
 
 
             <params.com.stepview.StatusViewScroller
@@ -43,14 +44,14 @@
                 app:circleStrokeWidth="4dp"
 
                 app:currentCount="1"
+                app:drawLabels="true"
+                app:lineColor="#4CAF50"
                 app:lineColorCurrent="@color/colorPrimaryDark"
                 app:lineColorIncomplete="#B4B7BA"
                 app:lineGap="5dp"
+
                 app:lineWidth="3dp"
                 app:stepCount="17"
-
-                app:drawLabels="true"
-                app:lineColor="#4CAF50"
 
                 app:textColorLabels="@android:color/white"
                 app:textColorLabelsCurrent="@android:color/white"
@@ -80,8 +81,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/activity_question_appBarLayout"
         tools:listitem="@layout/question_item" />
-
-
 
 
     <Button
